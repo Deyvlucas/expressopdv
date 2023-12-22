@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Roboto:wght@900&display=swap');
+
+body{
+    background-image: linear-gradient(#ff2500, #ff0000);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: px;
+}
+
+.container{
+    max-width: 100%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo img{ /* ESTILIZAÇÃO DA LOGO  */
+    width: 200px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.menu nav { /* ALINHANDO O TEXTO DOS LINKS NO CENTRO  */
+    text-align: center;
+
+
+}
+.menu nav a  { /* ESTILIZAÇÃO DOS LINKS   */
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.menu nav a::after{  /* ESTILIZAÇÃO DOS LINKS */
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(#ff2500, #ff7100);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{ /* EFEITO AO PASSAR O MOUSE EM CIMA */
+    width: 60px;
+}
+.menu{ /* ESPAÇAMENTO ENTRE A LOGO E OS LINKS */
+    width: 50%;
+}
+
+.sociais button{ /* BOTOES DAS REDES SOCIAIS */
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(#ff2600, #ff7300);
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sociais button i{ /* BOTOES DAS REDES SOCIAIS */
+    font-size: 30px;
+    color: white;
+}
+/* ----------------------------------------------------- */
+
+.container_titulo{
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    
+
+}
+
+.container_titulo .estatico {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    
+}
+
+.container_titulo .dinamico{
+    margin-left: 15px;
+
+}
+
+.dinamico {
+    color: #000000;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.dinamico span::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 4px solid white;
+    animation: typing 1.5s steps(10) infinite;
+    background-color: #ff2500;
+    
+}
+
+.dinamico span {
+    position: relative;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.links img{
+    display: inline-flex;
+    border-radius: 50px;
+    width: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: black;
+    box-shadow: 2px 2px 2px rgb(1, 1, 1); /* colocar sombra */
+
+}
+
+
+footer{
+    margin-top: 10%;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+
